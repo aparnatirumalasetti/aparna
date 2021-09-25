@@ -1,0 +1,48 @@
+{% load static %}
+<html>
+<head>
+    <header>
+        <div id="header">
+         <img src="{% static "images/cart.jpg" %}">
+         <img src="{% static "images/mail.png" %}">
+          <img src="{% static "images/phone-call.png" %}">
+        </div>
+
+
+        <hr width="100%" color="red">
+    </header>
+    <link rel="stylesheet" href={% static "style.css"%}>
+</head>
+
+
+<body>
+<div class ="nav">
+    <div class="column">
+        <a href="contactus.html "> <h1>Contact Us</h1></a>
+    </div>
+    <div class="column">
+        <a href="https://www.zomato.com/burger-restaurants-near-me "> <h1>Products</h1></a>
+    </div>
+    <div class="column">
+        <a href="aboutus.html "> <h1>About us</h1></a>
+    </div>
+    <div class="column">
+        <a href={% url 'worlds'%}> <h1>Home</h1></a>
+    </div>
+     <div class="logo">
+        <a href=""><img src="logo.jpg"></a>
+    </div>
+    <form action={% url 'worlds' %}>
+      <input type='submit' value='submit'>
+    </form>
+
+</div>
+<hr width="100%" color="red" >
+<img src="{% static "images/burger.jpg" %}" alt="nature" width="1350" height="400">
+<br>
+<h1 style="text-align:center">WELCOME TO FRESHFOOD</h1>
+<br>
+<p>
+    Fresh food is food which has not been preserved and has not
+
+</P>

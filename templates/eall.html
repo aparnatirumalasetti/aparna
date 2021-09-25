@@ -1,0 +1,12 @@
+<form>
+<input type=text name='s' placeholder="search here"><br>
+<input type="submit" value="search here">
+</form>
+
+{% for i in data %}
+<h1>Name is:{{i.learners_name}}<h1><br>
+<h6>Adress is:{{i.adress}}<h6><br>
+{% endfor %}
+{% for i in messages %}
+{{i}}
+{% endfor %}

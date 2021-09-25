@@ -1,0 +1,9 @@
+<form method='POST' enctyoe="multipart/form-data">
+{% csrf_token %}
+{{form.as_p}}
+<input type =submit value="submit">
+</form>
+you have selected{{f}}<br>
+no:of item selected {{q}}<br>
+hii {{name}} your total bill is:{{t}}
+<img src="{{profile_pic.profile_pic.url}}" alt="not found">

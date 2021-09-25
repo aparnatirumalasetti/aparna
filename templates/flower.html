@@ -1,0 +1,8 @@
+<h1>hii all</h1>
+{% block content %}
+<a href={% url 'plan' %}><p>hello world</p></a>
+<form action={% url 'plan' %}>
+  <input type="submit" value='submit'>
+  </form>
+  <input class="btn" type="button" value="Explore Now" onclick="window.location.href='{% url 'plan' %}'">
+{% endblock %}
